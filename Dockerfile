@@ -15,3 +15,6 @@ RUN apt-get -y update
 RUN apt-get -y install git \
     zip \
     unzip
+
+# Aliases
+RUN echo 'alias com="composer"' >> ~/.bashrc
