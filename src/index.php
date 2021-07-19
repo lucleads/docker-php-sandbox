@@ -2,4 +2,7 @@
 
 require __DIR__ . '/vendor/autoload.php';
 
-echo 'Bienvenido al SandBox de PHP';
+use App\Hello;
+
+$app = new Hello;
+$app->salute();
