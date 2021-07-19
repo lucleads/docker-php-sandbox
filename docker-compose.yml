@@ -1,8 +1,9 @@
 version: '3.3'
 
 services:
+    # Main application service
     php:
-        container_name: ${CONTAINER_NAME}
+        container_name: ${CONTAINER_NAME}_${PHP_VERSION}
         build:
             context: .
             dockerfile: Dockerfile
