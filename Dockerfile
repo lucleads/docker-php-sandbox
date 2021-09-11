@@ -23,7 +23,6 @@ RUN pecl install xdebug \
     && docker-php-ext-enable xdebug \
 
 # Copy installed dependencies
-COPY --from=dependency-manager /app /var/www/html/
 COPY php.ini /usr/local/etc/php/php.ini
 
 # Aliases
